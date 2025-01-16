@@ -24,7 +24,7 @@ class Wing
     // Основной метод рендера
     public function render(string $template): string
     {
-        $templatePath = "{$this->viewsPath}/{$template}.wing";
+        $templatePath = "{$this->viewsPath}/{$template}.wing.php";
         $cachedFile = "{$this->cachePath}/" . md5($template) . '.php';
 
         if (!file_exists($cachedFile) || filemtime($templatePath) > filemtime($cachedFile)) {
@@ -67,7 +67,7 @@ class Wing
     // Метод для разрешения путей
     protected function getTemplatePath(string $template): string
 	{
-		return rtrim($this->viewsPath, '/') . '/' . $template . '.wing';
+		return rtrim($this->viewsPath, '/') . '/' . $template . '.wing.php';
 	}
 
 }

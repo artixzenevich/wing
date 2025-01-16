@@ -1,6 +1,6 @@
 {
     "name": "artixzenevich/wing",
-    "description": "A lightweight PHP template engine for Bitrix and other projects.",
+    "description": "A lightweight PHP template engine for Bitrix-CMS",
     "keywords": ["template engine", "bitrix", "php"],
     "type": "library",
     "license": "MIT",
